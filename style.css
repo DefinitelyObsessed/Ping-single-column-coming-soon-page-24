@@ -77,11 +77,14 @@ button, input, em {
 
 /* Main */
 main {
-  left: 50%;
-  position: absolute;
-  top: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.semi-main {
+  margin-top: max(18vh,150px);
   text-align: center;
-  transform: translate(-50%, -25%);
   width: 85vw;
 }
 
@@ -238,7 +241,7 @@ em.error-message {
 }
 
 @media (min-width:900px) {
-  main {
+  .semi-main {
     width: 55vw;
   }
 
@@ -260,7 +263,7 @@ em.error-message {
 }
 
 @media (min-width:1300px) {
-  main {
+  .semi-main {
     width: 50vw;
   }
 
